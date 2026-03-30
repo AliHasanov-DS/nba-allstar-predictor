@@ -9,7 +9,7 @@ st.markdown("Enter player statistics below to analyze their **All-Star potential
 @st.cache_resource
 def load_model():
     base_path = os.path.dirname(__file__)
-    model_path = os.path.join(base_path, 'nba_xgboost_real_model.joblib')
+    model_path = os.path.join(base_path, 'nba_xgboost_model.joblib')
     if os.path.exists(model_path):
         return joblib.load(model_path)
     return None
