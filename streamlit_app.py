@@ -56,8 +56,8 @@ if st.button("🔮 Predict Result", use_container_width=True):
     col1.metric("AI Probability Score", f"{prob * 100:.2f}%")
 
     threshold = 0.25
-
     if prob >= threshold:
+        col2.success("🌟 ALL-STAR LEVEL PERFORMANCE")
         if prob >= 0.40:
             st.balloons()
     else:
